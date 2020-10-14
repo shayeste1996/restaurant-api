@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/open-hours",
+      "handler": "open-hours.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-hours/count",
+      "handler": "open-hours.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/open-hours/:id",
+      "handler": "open-hours.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/open-hours",
+      "handler": "open-hours.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/open-hours/:id",
+      "handler": "open-hours.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/open-hours/:id",
+      "handler": "open-hours.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

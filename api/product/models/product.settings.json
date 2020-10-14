@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "total": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "network": {
+      "type": "string"
+    },
+    "RAM": {
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "os": {
+      "type": "string"
+    }
+  }
+}

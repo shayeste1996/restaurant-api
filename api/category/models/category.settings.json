@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "food-category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "restaurant": {
+      "via": "food_categories",
+      "model": "restaurants"
+    }
+  }
+}

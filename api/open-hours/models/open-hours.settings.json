@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "open_hours",
+  "info": {
+    "name": "open-hours"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "restaurant": {
+      "via": "open_hours",
+      "model": "restaurants"
+    },
+    "openningTime": {
+      "type": "string"
+    },
+    "closingTime": {
+      "type": "string"
+    }
+  }
+}
